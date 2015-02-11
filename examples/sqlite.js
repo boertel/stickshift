@@ -4,7 +4,7 @@ var http = require('http');
 var concat = require('concat-stream');
 var st = require('st');
 
-var mount = st({ path: __dirname, url: '/', cache: false });
+var mount = st({ path: __dirname + '/..', url: '/', cache: false });
 
 // Create fake data for the testing server, so that your queries show something.
 db.serialize(function() {
